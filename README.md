@@ -26,8 +26,6 @@ leasson1 (Первый день обучения)
 6. Задание цикл while - [Talk_To_Hand.py] - **Выполнено!** 
 
 
-[shuvalov.xyz]
-
 [hello.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/hello.py
 [info.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/info.py
 [test_func.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/test_func.py
