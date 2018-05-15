@@ -13,7 +13,6 @@ logging.basicConfig(format='%(name)s - %(levelname)s - %(message)s',
 
 def greet_user(bot, update):
     text = 'Я заметил что Вы нажали "/start" ?'
-    # print(text) -- что бы не сорить в консоль
     update.message.reply_text(text)
 
 
