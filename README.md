@@ -8,6 +8,6 @@
 - bot.py - Мой первый Telegram Бот
 
 - Домашнее задание:
-- Sorting-Hat.py - Задание1 
-- Comparing-Strings.py - Задание2
-- Class-Ratings.py - Задание3
+- Задание1 - Sorting-Hat.py - Выполнено!
+- Задание2 - Comparing-Strings.py - Выполнено!
+- Задание3 - Class-Ratings.py - Выполнено!
