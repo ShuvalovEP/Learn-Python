@@ -22,10 +22,7 @@ def average_score_class():
             count_score += scores
             ratings[id]['count_score'] = count_score
         id += 1
-        
+
 average_score_class()
-
-ratings
-
 
 #Посчитать и вывести средний балл по всей школе.
