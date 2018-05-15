@@ -11,17 +11,19 @@ leasson1 (Первый день обучения)
 [bot.py]      | Самостоятельная работа - TelegramBot
 
 ### Домашнее задание:
-**1. Задание** - [Sorting-Hat.py] - **Выполнено!** 
+#### Уметь делать выбор при помощи оператора if:
+**1. Задание1** - [Sorting-Hat.py] - **Выполнено!** 
 
-**2. Задание** - [Comparing-Strings.py] - **Выполнено!** 
+**2. Задание2** - [Comparing-Strings.py] - **Выполнено!** 
 
-**3. Задание** - [Class-Ratings.py] - **Выполнено!** 
+####Повторять одни и те-же действия несколько раз подряд:
+**3. Задание цикл for** - [Class-Ratings.py] - **Выполнено!** 
 
-**4. Задание** - [Dora_the_Explorer.py] - **Выполнено!** 
+**4. Задание цикл while** - [Dora_the_Explorer.py] - **Выполнено!** 
 
-**5. Задание** - [Find_Person.py] - **Выполнено!** 
+**5. Задание цикл while** - [Find_Person.py] - **Выполнено!** 
 
-**6. Задание** - [Talk_To_Hand.py] - **Выполнено!** 
+**6. Задание цикл while** - [Talk_To_Hand.py] - **Выполнено!** 
 
 
 
@@ -30,6 +32,7 @@ leasson1 (Первый день обучения)
 [test_func.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/test_func.py
 [answers.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/answers.py
 [bot.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/bot.py
+
 [Class-Ratings.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/Class-Ratings.py
 [Comparing-Strings.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/Comparing-Strings.py 
 [Sorting-Hat.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/Sorting-Hat.py
