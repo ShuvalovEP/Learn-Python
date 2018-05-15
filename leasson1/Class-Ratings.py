@@ -16,16 +16,20 @@ ratings = [{'school_class': '5a', 'scores': [2,3,5,2,5]},
 
 def average_score_class():
     id = 0 
+    scores_list = []
     for school_class in ratings: 
         count_score = 0
         len_scores = len(school_class['scores'])
         for scores in school_class['scores']:
             count_score += scores
+            scores_list.append(scores)
             ratings[id]['count_score'] = count_score / len_scores
         id += 1
         print('Класс: ', school_class['school_class'], 'Средний бал: ', school_class['count_score'])
-
+    len_scores_average = len(scores_list)
+    score_average = 0
+    for scores in scores_list:
+        score_average += scores
+    print('Средний бал по школе: ', score_average / len_scores_average)
 
 average_score_class()
-
-#Посчитать и вывести средний балл по всей школе.
