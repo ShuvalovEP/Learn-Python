@@ -17,6 +17,8 @@ leasson1 (Первый день обучения)
 
 **3. Задание** - [Class-Ratings.py] - **Выполнено!** 
 
+**4. Задание** - [Dora_the_Explorer.py] - **В процессе!** 
+
 
 [hello.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/hello.py
 [info.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/info.py
@@ -26,3 +28,4 @@ leasson1 (Первый день обучения)
 [Class-Ratings.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/Class-Ratings.py
 [Comparing-Strings.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/Comparing-Strings.py 
 [Sorting-Hat.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/Sorting-Hat.py
+[Dora_the_Explorer.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/hello.py
