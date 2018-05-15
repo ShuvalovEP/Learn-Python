@@ -10,6 +10,7 @@ def comp_str(str1, str2):
         else: 
             print('Исключительная ситуация', str1, str2)
 
+
 comp_str('learn', 'learn')
 comp_str('learn1', 'learn')
 comp_str('1', 'learn')
