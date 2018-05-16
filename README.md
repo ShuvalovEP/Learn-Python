@@ -26,7 +26,7 @@ leasson1 (Первый день обучения)
 6. Задание цикл while - [Talk_To_Hand.py] - **Выполнено!** 
 
 #### Уметь обрабатывать исключения, чтобы программа не "падала":
-7. Задание обработка exception - [Unsinkable.py] - **В процессе!** 
+7. Задание обработка exception - [Unsinkable.py] - **Выполнено!**
 
 
 [hello.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/hello.py
