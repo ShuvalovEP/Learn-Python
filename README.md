@@ -28,6 +28,9 @@ leasson1 (Первый день обучения)
 #### Уметь обрабатывать исключения, чтобы программа не "падала":
 7. Задание обработка exception - [Unsinkable.py] - **Выполнено!**
 
+#### Научиться устанавливать, подключать и использовать чужие наработки - модули":
+8. Задание научить бота искать в каком созвездии палнета - [bot.py] - **Выполнено!**
+
 
 [hello.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/hello.py
 [info.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/info.py
