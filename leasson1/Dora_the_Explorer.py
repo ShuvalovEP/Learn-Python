@@ -6,8 +6,8 @@ sought_man = "Валера"
 
 while True:
     if people_list.pop() == sought_man:
-        print("Валера нашелся")
+        print('{name} нашелся'.format(name=sought_man))
         break
     else:
-        print('Ищу Валеру')
+        print('{name}, ты где?'.format(name=sought_man))
 
