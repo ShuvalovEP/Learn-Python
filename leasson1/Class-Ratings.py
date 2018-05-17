@@ -1,3 +1,5 @@
+#  Все мы немножко индусы и пишем свой национальный код =-)
+
 ratings = [{'school_class': '5a', 'scores': [2,3,5,2,5]},
            {'school_class': '6a', 'scores': [3,4,4,3,4]},
            {'school_class': '7a', 'scores': [4,5,3,2,3]},
@@ -28,7 +30,7 @@ def average_score_class():
         print('Класс: ', school_class['school_class'], 'Средний бал: ', school_class['count_score'])
     len_scores_average = len(scores_list)
     score_average = 0
-    for scores in scores_list:
+    for scores in scores_list: # Посчитать и вывести средний балл по каждому классу.
         score_average += scores
     print('Средний бал по школе: ', score_average / len_scores_average)
 
