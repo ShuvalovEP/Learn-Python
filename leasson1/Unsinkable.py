@@ -1,19 +1,14 @@
-# Переписать функцию ask_user(), добавив обработку exception-ов
+
+
 def get_answer(question):
-    try:
-        answers = {"Как дела": "Лучше всех", 
-                   "Сколько тебе лет": "31", 
-                   "Чем занимаешся": "Да ничем"}
-        if question in answers:
-            return answers.get(question)
-        else:
-            return 'Ты о чем?'
-    except:
-        return('Что то пошло не так')
+    answers = {"Как дела": "Лучше всех", 
+               "Сколько тебе лет": "31", 
+               "Чем занимаешся": "Да ничем"}
+    return answers.get(question, 'Ты о чём?')
+
 
 def ask_user():
     try:
-        answer = 0
         while True: 
             answer = input()
             if answer == 'Пока':
@@ -21,6 +16,6 @@ def ask_user():
                 break
             else:
                 print(get_answer(answer))
-    except KeyboardInterrupt: # Добавить перехват ctrl+C и прощание
+    except KeyboardInterrupt:
         print('Вы нажали сочетание клавиш: ctrl+c')
         exit()
