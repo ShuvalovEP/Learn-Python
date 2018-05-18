@@ -4,9 +4,8 @@ import logging
 import datetime
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-PROXY = {'proxy_url': 'socks5://t1.learn.python.ru:1080',
-         'urllib3_proxy_kwargs': {'username': 'learn', 
-                                  'password': 'python'}}
+#PROXY = {'proxy_url': 'socks5://t1.learn.python.ru:1080', 'urllib3_proxy_kwargs': {'username': 'learn', 'password': 'python'}}
+PROXY = {'proxy_url': 'socks5://52.15.41.251:80', 'urllib3_proxy_kwargs': {'username': 'junked', 'password': '$huv@lovZ8'}}
 
 logging.basicConfig(format='%(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO,
@@ -14,18 +13,21 @@ logging.basicConfig(format='%(name)s - %(levelname)s - %(message)s',
 
 what_day = datetime.datetime.now()
 
-def get_planet(bot, update):
-    planet = getattr(ephem, update)
-    planet = ephem.constellation(planet(what_day))
-    update.message.reply_text(planet[1])
 
+def get_planet(bot, update):
+    text = update.message.text
+    planet = getattr(ephem, text)
+    planet = planet(what_day)
+    planet = ephem.constellation(planet)
+    update.message.reply_text(planet[1])
+ 
 
 def main():
     key = os.getenv('telegram_key', ' ')
     mybot = Updater(key, request_kwargs=PROXY)
     dp = mybot.dispatcher
-    dp.add_handler(CommandHandler('planet', talk_to_me))
-    dp.add_handler(MessageHandler(Filters.text, talk_to_me))
+    dp.add_handler(CommandHandler('planet', get_planet))
+    dp.add_handler(MessageHandler(Filters.text, get_planet))
     mybot.start_polling()
     mybot.idle()
 
