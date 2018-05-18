@@ -2,9 +2,6 @@ input_age = input('Пожалуйста введите Ваш возраст: ')
 
 
 def sorting_hat(age):
-    # Вызывается из convert() 
-    # Принимает один аргумент age обязательно int()
-    # Выводит сообщение в завистимсти от возраста
     if age <= 3:
         print('Еще совсем малыш')
     elif age > 3 and age <= 6:
@@ -24,16 +21,11 @@ def sorting_hat(age):
 
 
 def convert():
-    # Вызывается из validation()
-    # Конвертирует содержимое input_age в int()
-    # Результат передается в виде аргумента в sorting_hat()
     convert_age = int(input_age) 
     return sorting_hat(convert_age)
 
 
 def validation():
-    # Проверяет является ли input_age числом
-    # Вызывает функцию корвертации ввода в int()
     if input_age.isdigit():
         convert()
     else:
