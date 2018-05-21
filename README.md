@@ -69,4 +69,9 @@ leasson1 (Первый день обучения)
 [Talk_To_Hand.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/Talk_To_Hand.py
 [Unsinkable.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson1/Unsinkable.py
 
+[env_setup.sh]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson2/env_setup.sh
+[requirements.txt]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson2/requirements.txt
+[Back-to-the-Future.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson2/Back-to-the-Future.py
+[Book_Thief.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson2/Book_Thief.py
+
 [shuvalov.xyz]:http://shuvalov.xyz
