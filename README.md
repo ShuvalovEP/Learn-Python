@@ -19,7 +19,7 @@ leasson2 (Второй день обучения)
 #### Работа с файлами:
 4. Прочитать и подсчитайте количество слов в файле - [Book_Thief.py] - **Выполнено!** 
 
-5. Записать словаря get_answe в структурированный .csv файл - [ ] - **В работе!** 
+5. Записать словаря get_answe в структурированный .csv файл - [Pulp_Fiction.py] - **Выполнено!** 
 
 
 
@@ -73,5 +73,7 @@ leasson1 (Первый день обучения)
 [requirements.txt]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson2/requirements.txt
 [Back-to-the-Future.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson2/Back-to-the-Future.py
 [Book_Thief.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson2/Book_Thief.py
+[Pulp_Fiction.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson2/Pulp_Fiction.py
+
 
 [shuvalov.xyz]:http://shuvalov.xyz
