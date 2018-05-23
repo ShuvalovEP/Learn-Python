@@ -27,6 +27,7 @@ def now_date():
     convert = converting_date_display(date)
     return convert
 
+
 def main():
     try:
         while True:
