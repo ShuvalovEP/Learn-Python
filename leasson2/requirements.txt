@@ -1,2 +1,2 @@
-pyephem
-python-telegram-bot[socks]
+pyephem==3.7.6.0
+python-telegram-bot==10.1.0
