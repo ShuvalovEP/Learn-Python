@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>names</title>
+  </head>
+  <body>
+      <h1>Имена</h1>
+    <table border="1">
+        <tr>
+            <th>Имя</th>
+            <th>Год</th>
+            <th>Месяц</th>
+            <th>Количество</th>
+        </tr>
+        {% for key in data_list%} 
+        <tr>
+            <td align="center" width="55">{{ key.get('name')}}</td>
+            <td align="center" width="55">{{ key.get('year')}}</td>
+            <td align="center" width="55">{{ key.get('month')}}</td>
+            <td align="center" width="55">{{ key.get('num_person')}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+  </body>
+</html>
+
+
