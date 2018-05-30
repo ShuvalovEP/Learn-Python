@@ -8,6 +8,7 @@ config = {
     'data_mos_key': os.getenv('data_mos_key', ' '),
     'open_weat_key': os.getenv('open_weat_key', ' '),
     'data_mos_url': 'http://api.data.mos.ru/v1/datasets/2009/rows',
+    'open_weat_url': 'http://api.openweathermap.org/data/2.5/find',
     'weatr_city': 'Moscow,RU'}
 
 
@@ -22,37 +23,47 @@ app = Flask(__name__)
 
 
 def open_weat():
-    response = requests.get('http://api.openweathermap.org/data/2.5/find',
-    params={'q': config.get('weatr_city'), 'type': 'like', 'units': 'metric', 'lang': 'ru', 'APPID': config.get('open_weat_key')})
+    response = requests.get(config.get('open_weat_url'), 
+        params={'q': config.get('weatr_city'),
+                'APPID': config.get('open_weat_key') ,    
+                'lang': 'ru', 
+                'type': 'like', 
+                'units': 'metric'})
     if response.status_code == 200:
         data = response.json()
         rain = data['list'][0]['rain']
         city = data['list'][0]['name']
-        temp = data['list'][0]['main']['temp']
-        clouds = data['list'][0]['weather'][0]['description']
         if rain == None:
             rain = 'без осадков'
         if city == 'Moscow':
             city = 'Москве'
         weather = ('{date} В {city} сегодня {clouds} и {rain} а темпиратура +{temp} гадуса'
-                   .format(city=city, date=date_string(), temp=temp, clouds=clouds, rain=rain))
+                   .format(
+                           clouds = data['list'][0]['weather'][0]['description'],
+                           date = date_string(), 
+                           temp = data['list'][0]['main']['temp'], 
+                           rain = rain, 
+                           city = city
+                           ))
         return weather
 
+
 def data_mos(year):
-    names_dict = []
+    names_list = []
     response = requests.get(config.get('data_mos_url'), 
-        params={'api_key': config.get('data_mos_key'), '$filter': 'Cells/Year eq ''{year}'''.format(year=year)})
+        params={'api_key': config.get('data_mos_key'), 
+                '$filter': 'Cells/Year eq ''{year}'''.format(year=year)})
     if response.status_code == 200:
         data = response.json()
         for row in data:
-            names_dict.append(
+            names_list.append(
                         {'global_id': row.get('global_id'),
                         'numb': row.get('Number'),
                         'name': row.get('Cells').get('Name').replace('\n',''),
                         'year': row.get('Cells').get('Year'),
                         'month': row.get('Cells').get('Month'),
                         'num_person': row.get('Cells').get('NumberOfPersons')})
-    return names_dict
+    return names_list
 
 
 @app.route('/')
