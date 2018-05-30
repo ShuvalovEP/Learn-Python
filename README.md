@@ -1,6 +1,22 @@
 Learn-Python - 1001 поток ;-)
 ===============
 
+leasson3 (Вторая неделя обучения)
+----------------------------------
+Название      | Содержимое   
+--------------|-------------------------
+[bus_stop.py] | Самостоятельная работа - работа с JSON 
+
+### Домашнее задание:
+#### Json + Flask + Jinja2:
+1. Работа с json получение данных api.data.mos.ru - [bus_stop.py] - **Выполнено!** 
+
+2. Вывод полученных данный FLASK - [app.py] - **Выполнено!**
+
+3. Создать фильтрацию /names?year=2016 - [app.py] - **Выполнено!**
+
+
+
 leasson2 (Вторая неделя обучения)
 ----------------------------------
 Название      | Содержимое   
@@ -74,6 +90,8 @@ leasson1 (Первая неделя обучения)
 [Back-to-the-Future.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson2/Back-to-the-Future.py
 [Book_Thief.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson2/Book_Thief.py
 [Pulp_Fiction.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson2/Pulp_Fiction.py
+[bus_stop.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson3/bus_stop.py
+[app.py]:https://github.com/ShuvalovEP/Learn-Python/tree/master/leasson3/ShuvalovAPP/app.py
 
 
 [shuvalov.xyz]:http://shuvalov.xyz
