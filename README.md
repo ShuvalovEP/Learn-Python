@@ -111,5 +111,10 @@ leasson1 (Первая неделя обучения)
 [bus_stop.py]:https://github.com/ShuvalovEP/Learn-Python/blob/master/leasson3/bus_stop.py
 [app.py]:https://github.com/ShuvalovEP/Learn-Python/tree/master/leasson3/ShuvalovAPP/app.py
 
+[db.py]:https://github.com/ShuvalovEP/Learn-Python/tree/master/leasson3/ShuvalovAPP/db.py
+[add_authors.py]:https://github.com/ShuvalovEP/Learn-Python/tree/master/leasson3/ShuvalovAPP/add_authors.py
+[query.py]:https://github.com/ShuvalovEP/Learn-Python/tree/master/leasson3/ShuvalovAPP/query.py
+
+
 
 [shuvalov.xyz]:http://shuvalov.xyz
