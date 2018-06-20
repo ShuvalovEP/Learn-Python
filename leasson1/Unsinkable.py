@@ -1,3 +1,4 @@
+#Unsinkable.py
 
 
 def get_answer(question):
@@ -10,7 +11,7 @@ def get_answer(question):
 def ask_user():
     try:
         while True: 
-            answer = input()
+            answer = input('Спроси  меня: ')
             if answer == 'Пока':
                 print('Приятно было поболтать.')
                 break
@@ -19,3 +20,6 @@ def ask_user():
     except KeyboardInterrupt:
         print('Вы нажали сочетание клавиш: ctrl+c')
         exit()
+
+if __name__ == '__main__':
+    ask_user()
