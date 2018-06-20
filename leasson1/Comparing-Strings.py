@@ -1,3 +1,6 @@
+#Comparing-Strings.py
+
+
 def comp_str(str1, str2):
     # принимаем два аргумента
     if str1 == str2:
@@ -11,6 +14,7 @@ def comp_str(str1, str2):
             print('Исключительная ситуация', str1, str2)
 
 
-comp_str('learn', 'learn')
-comp_str('learn1', 'learn')
-comp_str('1', 'learn')
+if __name__ == '__main__':
+    comp_str('learn', 'learn')
+    comp_str('learn1', 'learn')
+    comp_str('1', 'learn')
