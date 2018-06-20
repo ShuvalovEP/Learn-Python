@@ -1,3 +1,5 @@
+#Sorting-Hat.py
+
 input_age = input('Пожалуйста введите Ваш возраст: ')
 
 
@@ -32,4 +34,6 @@ def validation():
         print('Возраст необходимо указать простым числом')
         pass
 
-validation()
+
+if __name__ == '__main__':
+    validation()
