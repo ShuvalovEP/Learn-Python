@@ -1,3 +1,4 @@
+#Class-Ratings.py
 
 ratings = [{'school_class': '5a', 'scores': [2,3,5,2,5]},
            {'school_class': '6a', 'scores': [3,4,4,3,4]},
@@ -21,4 +22,6 @@ def average_score_class():
         print('Средний бал по классу: {} ='.format(class_school['school_class']), average_scores)
     print('Средний бал по школе: ', sum(class_average_scores, 1) / len(class_average_scores))
 
-average_score_class()
+
+if __name__ == '__main__':
+    average_score_class()
