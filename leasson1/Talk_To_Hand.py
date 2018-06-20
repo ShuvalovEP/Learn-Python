@@ -1,3 +1,4 @@
+#Talk_To_Hand.py
 # Написать функцию ask_user() чтобы с помощью input() спрашивать пользователя “Как дела?”, пока он не ответит “Хорошо”
 def ask_users():
     while True: 
@@ -24,4 +25,6 @@ def ask_user():
         else:
             print(get_answer(answer))
 
-ask_user()
+
+if __name__ == '__main__':
+    ask_user()
