@@ -1,3 +1,4 @@
+#Back-to-the-Future.py
 from datetime import timedelta, datetime
 
 delta_list = {'yesterday': timedelta(days=1), 'month_ago': timedelta(
@@ -5,16 +6,16 @@ delta_list = {'yesterday': timedelta(days=1), 'month_ago': timedelta(
 date_string = '01/01/17 12:10:03.234567'
 
 
-def converting_date_display(args):
+def date_string(args):
     args = args.strftime('%d.%m.%y')
     return args
 
 
 def delta_date(args):
-    get_delta = delta_list.get(args)
+    date_delta = delta_list.get(args)
     get_now_day = delta_list.get('now_day')
-    calculation_time = get_now_day - get_delta
-    convert = converting_date_display(calculation_time)
+    calculation_time = get_now_day - date_delta
+    convert = date_string(calculation_time)
     return convert
 
 
@@ -23,9 +24,9 @@ def transformation_date(args):
     return transformation
 
 
-def now_date():
+def today():
     date = delta_list.get('now_day')
-    convert = converting_date_display(date)
+    convert = date_string(date)
     return convert
 
 
@@ -40,18 +41,19 @@ def main():
             print(' \n Для выхода нажмите ctrl+c')
             command = input(' Введите номер команды: ')
             if command == '1':
-                print('\n       Вчера было:', delta_date('yesterday'))
+                print('\n Вчера было:', delta_date('yesterday'))
             elif command == '2':
-                print('\n       Сегодня:', now_date())
+                print('\n Сегодня:', today())
             elif command == '3':
-                print('\n       Месяц назад:', delta_date('month_ago'))
+                print('\n Месяц назад:', delta_date('month_ago'))
             elif command == '4':
-                print('\n       Преобразовано в datetime:',
+                print('\n Преобразовано в datetime:',
                       transformation_date(date_string))
             else:
                 print('{} - команда обязательно должна быть числом'.format(command))
     except KeyboardInterrupt:
         print('\n   Пока, пока!')
-        exit()
 
-main()
+
+if __name__ == '__main__':
+    main()
