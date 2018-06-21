@@ -1,4 +1,11 @@
+#Book_Thief.py
 
-with open('referat.txt', 'r', encoding='utf-8') as f:
-    content = f.read()
-    print(len(content.replace('\n', ' ').split(' ')))
+
+def reader():
+    with open('referat.txt', 'r') as file:
+        content = file.read()
+        print(len(content.replace('\n', ' ').split(' ')))
+
+
+if __name__ == '__main__':
+    reader()
